@@ -1,0 +1,11 @@
+#!/bin/sh
+#SBATCH --partition=paul
+##SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --mem=5G
+#SBATCH --array=1
+#SBATCH --time 8:00:00
+
+cmd="/home/sc.uni-leipzig.de/jy302xazi/erin/protein_generator/run_1/paula_output/pdb/sort.sh"
+echo "COMMAND: "$cmd
+eval $cmd

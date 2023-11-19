@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --partition=paul
+##SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --mem=5G
+#SBATCH --array=1-3022
+#SBATCH --time 24:00:00
+
+ID=$SLURM_ARRAY_TASK_ID
+
+cmd="$(cat /home/sc.uni-leipzig.de/jy302xazi/erin/protein_generator/run_1/paula_output/pdb/second_half_relax.array | head -n $ID | tail -n 1)"
+echo "COMMAND: "$cmd
+eval $cmd
+

@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --partition=paul
+##SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --mem=5G
+#SBATCH --array=1-3021
+#SBATCH --time 12:00:00
+
+python ./inference.py \
+    --num_designs 10 \
+    --out output/binder_design \
+    --pdb ../10_IgG3.pdb \
+    --T 25 --save_best_plddt \
+    --contigs B1-209,0 40-60 \
+    --hotspots B15,B74,B75,B81
+    --helix_bias 0.03 --strand_bias 0.0 --loop_bias 0.0 
