@@ -3,7 +3,7 @@ Python and Unix code for summer intern project through the Rosetta Commons REU a
 
 | Folder            | Content                                                                                               |
 | ----------------- | ----------------------------------------------------------------------------------------------------- |
-| pipeline_scripts  | original pipeline that implements ProteinGenerator, Rosetta FastRelax, and Rosetta Protein-Protein    |
-| data_analysis     | scripts for creating graphs analyzing filtering metrics, mainly utilizing Matplotlib                  |
+| pipeline_scripts  | Original pipeline that implements ProteinGenerator, Rosetta FastRelax, and Rosetta Protein-Protein    |
+| data_analysis     | Scripts for creating graphs that analyze filtering metrics, mainly utilizing Matplotlib               |
 | Presentations     | RosettaCON poster and final lab meeting presentation                                                  |
 
